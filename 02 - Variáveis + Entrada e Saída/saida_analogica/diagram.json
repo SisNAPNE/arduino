@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "author": "Gil Eduardo de Andrade",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -57, "left": 66.6, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": -95.4,
+      "left": 192,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -128.4,
+      "left": 253.4,
+      "attrs": { "color": "green" }
+    }
+  ],
+  "connections": [
+    [ "r2:1", "uno:GND.1", "green", [ "h-9.6", "v38.4" ] ],
+    [ "led1:C", "r2:2", "green", [ "v0" ] ],
+    [ "led1:A", "uno:3", "green", [ "h19.2", "v38.4" ] ]
+  ]
+}
